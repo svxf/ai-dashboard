@@ -1,3 +1,28 @@
+## A replica of [Character.AI](https://character.ai)
+
+### Demo website: [Here](https://ai-dashboard-senz.vercel.app)
+
+### Technologies
+- React
+- Next 13
+- Tailwind (Shadcn UI)
+- Prisma
+- Stripe
+- Clerk
+- MongoDB
+- Pinecone (Vector DB)
+- Upstash (Redis DB)
+
+### Pro features
+**How to test out the pro features**
+
+Go over to the stripe payment screen,
+
+then enter the following card information: 
+`4242 4242 4242 4242` and `555` on both of the `MM / YY` and `CVC`
+
+--------------
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
