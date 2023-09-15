@@ -58,7 +58,6 @@ export const ChatClient = ({ companion }: ChatClientProps) => {
         isLoading={isLoading}
         messages={messages}
       />
-      <div>Messages TODO</div>
       <ChatForm
         isLoading={isLoading}
         input={input}
