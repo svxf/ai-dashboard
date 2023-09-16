@@ -1,59 +1,77 @@
-## A replica of [Character.AI](https://character.ai)
+# AI Chatbot Platform
+Inspired by [Character.AI](https://character.ai)
 
-### Demo website: [Here](https://ai-dashboard-senz.vercel.app)
+![Project Logo](/resources/banner.png)
 
-### Technologies
-- React
-- Next 13
-- Tailwind (Shadcn UI)
-- Prisma
-- Stripe
-- Clerk
-- MongoDB
-- Pinecone (Vector DB)
-- Upstash (Redis DB)
+## Overview
 
-### Pro features
-**How to test out the pro features**
+An AI Chatbot Platform, that allows users to create and interact with AI chatbots. Users can easily design, and deploy chatbots for various purposes, and also use chatbots created by others. This project is built using React, Next.js, and a variety of other technologies.
 
-Go over to the stripe payment screen,
+## Features
 
-then enter the following card information: 
-`4242 4242 4242 4242` and `555` on both of the `MM / YY` and `CVC`
+- **Create Your Own Chatbots**: Users can design and customize their AI chatbots.
 
---------------
+- **Explore Community Bots**: Discover and use chatbots created by other users in the platform's community.
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+- **Integration with Stripe**: Monetize your chatbots by offering premium features or content through Stripe payments.
+
+- **User Authentication**: Utilizes Clerk for user authentication.
+
+- **Data Storage**: Prisma, MongoDB, Pinecone, and Upstash are used for data storage and retrieval.
+
+## Technologies Used
+- **Frontend**: React, Next.js 13, Tailwind CSS (Shadcn UI)
+- **Backend**: Prisma, MongoDB
+- **Payment Processing**: Stripe
+- **User Authentication**: Clerk
+- **Data Storage**: Pinecone (Vector DB), Upstash (Redis DB)
 
 ## Getting Started
 
-First, run the development server:
+To get a copy of this project up and running on your local machine for development and testing purposes, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+1. Clone the repository:
+```
+git clone https://github.com/svxf/ai-dashboard
+cd ai-dashboard
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```npm install```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Configure Environment Variables: Create a .env file and add your environment variables:
+```
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=key
+CLERK_SECRET_KEY=key
 
-## Learn More
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
 
-To learn more about Next.js, take a look at the following resources:
+DATABASE_URL="mongodb+srv://username:<password>@host/DATABASE"
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=name
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+PINECONE_INDEX = "companion"
+PINECONE_ENVIRONMENT="gcp-starter"
+PINECONE_API_KEY=api_key
 
-## Deploy on Vercel
+UPSTASH_REDIS_REST_URL=url
+UPSTASH_REDIS_REST_TOKEN=token
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+OPENAI_API_KEY=key
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+REPLICATE_API_TOKEN=token
+
+STRIPE_API_KEY=key
+
+STRIPE_WEBHOOK_SECRET=secret
+
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+```
+
+3. Start the development server:
+
+```npm run dev```
