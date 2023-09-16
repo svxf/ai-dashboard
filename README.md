@@ -1,11 +1,11 @@
-# AI Chatbot Platform
+# [AI Chatbot Platform](https://ai-dashboard-senz.vercel.app)
 Inspired by [Character.AI](https://character.ai)
 
 ![Project Logo](/resources/banner.png)
 
 ## Overview
 
-An AI Chatbot Platform, that allows users to create and interact with AI chatbots. Users can easily design, and deploy chatbots for various purposes, and also use chatbots created by others. This project is built using React, Next.js, and a variety of other technologies.
+An [AI Chatbot Platform](https://ai-dashboard-senz.vercel.app), that allows users to create and interact with AI chatbots. Users can easily design, and deploy chatbots for various purposes, and also use chatbots created by others. This project is built using React, Next.js, and a variety of other technologies.
 
 ## Features
 
